@@ -9,13 +9,13 @@
 	- 보통 회사 도메인 명을 패키지 이름에 사용. 단, 역순
 		- ex) lookingood의 경우
 		```java
-			pacakge com.lookingood.<패키지이름>;
+		pacakge com.lookingood.<패키지이름>;
 		```
 - 패키지 사용하기
 	- 외부패키지 안에 들어있는 클래스 사용하려면
 		```java
-			import java.util.Random;
-			import java.util.*;
+		import java.util.Random;
+		import java.util.*;
 		```
 	- 웬만하면 위의 코드처럼 쓰길 권장. 가독성때문.
 
