@@ -12,3 +12,4 @@
 + [접근제어자](https://github.com/hoonpark7442/TIL/blob/main/java/access_modifier.md)
 + [자바의 데이터타입](https://github.com/hoonpark7442/TIL/blob/main/java/data_type.md)
 + [형변환](https://github.com/hoonpark7442/TIL/blob/main/java/type_casting.md)
++ [스택과 힙](https://github.com/hoonpark7442/TIL/blob/main/java/stack_and_heap.md)
