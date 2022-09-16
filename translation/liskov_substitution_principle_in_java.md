@@ -19,7 +19,7 @@ SOLID 디자인 원리는 로버트 C. 마틴이 그의 2000년 논문, Design P
 우리의 뱅킹 어플리케이션은 두가지 계좌 타입을 지원한다. "current"와 "savings"이다. 이들은 각각 CurrentAccount와 SavingsAccount 클래스로 대변된다. BankingAppWithdrawalService는 사용자에게 인출 기능을 제공한다.
 
 
-![open_closed_example_1](/assets/open_closed_example_1.webp)
+![open_closed_example_1](/assets/open_closed_example_1.jpg)
 [이미지출처](https://www.baeldung.com/java-liskov-substitution-principle)<br/>
 
 안타깝게도 이 디자인을 확장하는 데 문제가 있다. BankingAppWithdrawalService는 계좌의 두가지 구체적인 구현을 알고 있다. 따라서 BankingAppWithdrawalService는 새로운 계정 유형이 도입될 때 마다 변경되어야 한다.
@@ -29,7 +29,7 @@ SOLID 디자인 원리는 로버트 C. 마틴이 그의 2000년 논문, Design P
 
 개방/폐쇄 원칙을 준수하도록 재설계 해보자. 새로운 계정 유형이 필요할 때 Account base 클래스를 사용하는 것으로 수정해보자.
 
-![open_closed_example_1](/assets/open_closed_example_2.webp)
+![open_closed_example_1](/assets/open_closed_example_2.png)
 [이미지출처](https://www.baeldung.com/java-liskov-substitution-principle)<br/>
 
 이런식으로 CurrentAccount와 SavingsAccount가 extend 할 수 있는 새로운 추상 클래스인 Account를 추가하자.
@@ -175,7 +175,7 @@ Account의 계약(constract)을 연장하여 해결할 수 있지만 다른 해�
 
 계좌 계층을 다시 설계해보자.
 
-![liskov_example_1](/assets/liskov_example_1.webp)
+![liskov_example_1](/assets/liskov_example_1.jpg)
 [이미지출처](https://www.baeldung.com/java-liskov-substitution-principle)<br/>
 
 모든 계정이 인출을 지원하지 않기 때문에 Account 클래스에서 인출 메서드를 새로운 추상 서브클래스인 WithdrawableAccount 으로 옮겼다. CurrentAccount와 SavingsAccount 모두 인출이 가능하다. 그래서 그들은 이제 새로운 WithdrawableAccount의 서브클래스가 되었다. 
