@@ -20,3 +20,6 @@
 + [예외](https://github.com/hoonpark7442/TIL/blob/main/java/exception.md)
 + [ArrayList vs LinkedList](https://github.com/hoonpark7442/TIL/blob/main/java/arrayList_vs_LinkedList.md)
 + [HashSet](https://github.com/hoonpark7442/TIL/blob/main/java/hashset.md)
++ [HashMap](https://github.com/hoonpark7442/TIL/blob/main/java/hashmap.md)
++ [익명클래스](https://github.com/hoonpark7442/TIL/blob/main/java/anonymous_class.md)
++ [람다와 final 변수](https://github.com/hoonpark7442/TIL/blob/main/java/functional_interface_and_lambdas.md)
