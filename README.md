@@ -23,3 +23,4 @@
 + [HashMap](https://github.com/hoonpark7442/TIL/blob/main/java/hashmap.md)
 + [익명클래스](https://github.com/hoonpark7442/TIL/blob/main/java/anonymous_class.md)
 + [람다와 final 변수](https://github.com/hoonpark7442/TIL/blob/main/java/functional_interface_and_lambdas.md)
++ [System.out.println()을 사용하지 않아야 하는 이유](https://github.com/hoonpark7442/TIL/blob/main/java/system_out_println.md)
