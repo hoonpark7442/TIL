@@ -36,3 +36,6 @@
 + [Di와 IoC](https://github.com/hoonpark7442/TIL/blob/main/spring/di-and-ioc.md)
 + [웹애플리케이션과 싱글톤](https://github.com/hoonpark7442/TIL/blob/main/spring/web-application-and-singleton.md)
 + [컴포넌트스캔과 의존관계 자동 주입](https://github.com/hoonpark7442/TIL/blob/main/spring/component-scan-and-di-auto-injection.md)
+
+## 디자인패턴
++ [템플릿 메서드 패턴과 콜백 패턴](https://github.com/hoonpark7442/TIL/blob/main/java/template-strategy-callback-pattern.md)
