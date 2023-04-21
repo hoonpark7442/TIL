@@ -11,7 +11,8 @@ https://www.youtube.com/watch?v=lEC-QoZeBkM
 
 - the router knows where to send you.
 
-where the router comes into plays in terms of the life cycle of your apps
+the first step to investigating how the router works is, of course, by identifying exactly where it is.
+you have to figure out where the router comes into plays in terms of the life cycle of your apps
 
 ```
 -> bin/rails middleware
