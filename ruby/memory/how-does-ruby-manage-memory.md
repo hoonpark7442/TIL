@@ -26,6 +26,9 @@ https://blog.saeloun.com/2022/04/12/ruby-variable-width-allocation.rb.html
 	- 그러니까 빈 슬롯들의 링크드리스트를 만들고, 마지막 방문한 데에서 전 슬롯의 주소를 가져온다? 잘 모르겠다.
 	- 빈 슬롯들의 링크드리스트를 만들고, 맨 마지막 노드에서 이전 빈슬롯의 주소를 가져올 수 있다. 맞나, 잘 몰겠다.
 
+
+![](/assets/freelist-d.gif)
+
 ## Allocating an object
 - 객체를 할당할 필요가 있을 때, 루비는 힙 페이지에 빈 슬롯의 주소를 요청한다. 그러면 힙 페이지는 항상 freelist 포인터를 리턴한다. 
 - 이 포인터에는 빈 슬롯의 주소가 담겨있다. 
