@@ -6,6 +6,7 @@ https://blog.saeloun.com/2022/04/12/ruby-variable-width-allocation.rb.html
 - RValue는 40bytes로 되어 있고 모든 타입 객체를 담을 수 있다. 
 - 40바이트 중에서 첫 8바이트는 플래그, 다음 8바이트는 클래스 포인터를 위한 자리다. 나머지 24바이트는 object-specific 정보를 담는다. 
 - 클래스 객체라면 extension object의 포인터를, 스트링이면 그 값을 담는다.
+![](/assets/r-value.jpeg)
 
 ## Heap Pages
 - 이 40바이트 슬롯은 힙페이지로 묶인다. 힙페이지는 16kb의 메모리 컨테이너이며 각 힙 페이지는 약 408~409개의 슬롯을 갖는다.
