@@ -13,7 +13,7 @@ https://blog.saeloun.com/2022/04/12/ruby-variable-width-allocation.rb.html
 
 ## Freelist
 - **힙페이지가 생성될 때** 모든 슬롯은 T_NONE이라는 타입의 RValue로 채워진다. 이는 빈슬롯이란 것을 의미하며 오직 플래그와 next로 알려져있는 Klass pointer 를 담고 있다. (아마도..원문에는 그냥 this라고 나와있는데 이게 뭘 가리키는건지 몰겠지만 아마도 next일거같다...)이 next라는 Klass pointer는 다른 RVALUE를 가리킨다.
-![](/assets/freelist1.png)
+![](/assets/freelist.png)
 - **힙페이지가 초기화 될 때** 루비는 freelist 포인터를 첫번째슬롯의 주소로 설정하고, 각 슬롯을 방문하기 시작한다. 
 - 각 슬롯에 점차 도달하면, freelist 포인터를 현재 슬롯의 주소로 설정하고, 현재 슬롯의 next 포인터를(아마 Klass pointer를 말하는거아닐까싶다) 이전 슬롯의 주소로 설정한다.(이것도 잘 모르겠다. 이름은 next인데 왜 이전 슬롯 주소로 설정하나..?next란걸 없애고 이전 슬롯주소로 대체한단건가?)
 	- 아 음 그니까 뒤에서 부터 채워넣나? 그러니 previous 주소지만 예를 들어 맨마지막 슬롯에 채워놓고 그 다음 프리리스트 포인터는 그 전 주소로 옮겨가게 되고, 결국 의미상 백워드여도 next긴 하니까..?
